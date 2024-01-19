@@ -1,0 +1,65 @@
+
+.head header {
+    position: fixed;
+    background-color: rgb(222, 217, 237);
+    margin-top:0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.headline {
+    text-align: center;
+    text-shadow: 2px 1px;
+    letter-spacing: 2px;
+    
+}
+
+
+.navhead ul {
+    padding: -1px 1px;
+    text-align: right;
+    font-size: 18px;
+    background-color: rgb(89, 124, 214);
+    border: 2px solid aliceblue;
+    width: 102%;
+    overflow: hidden;
+    list-style-type: none;
+    border-radius: 5px;
+    
+}
+
+.navhead li {
+    float: right;
+    padding-left: 2%;
+    height: 50px;
+}
+
+.navhead a:visited {
+    color: white;
+}
+
+.navhead .dropbtn {
+    display: inline-block;
+    background-color: rgb(89, 124, 214);
+    border: 0;
+    font-size: 22px;
+}
+
+.navhead .bttn1:hover a:hover,.button1:hover,.buttonLevel:hover {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 3px red;
+}
+
+.navhead a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+.btnsearch {
+    height: 20px;
+    width: 70%!important;
+    transition: width .35s ease-in-out;
+}
+.btnsearch:focus,.btnsearch button{
+    width: 180px;
+}

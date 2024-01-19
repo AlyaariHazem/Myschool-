@@ -1,0 +1,75 @@
+
+/* submit */
+.create_submit{
+    width:30%;
+    margin-left: 50%;
+    margin-top: 5%;
+}
+.create_form{
+    font-size: 30px;
+}
+.index_css{
+margin-left: 6%;
+width: 94%;
+}
+/* Style the top navigation bar */
+.topnav{
+    overflow: hidden;
+    color: black;
+    background-color: rgb(222, 217, 237);
+  }
+  @media (max-width:550px){
+    .topnav{
+      margin-top: 20%;  
+    }
+    .topnav .edita{
+      margin-right:0 !important;
+    }
+  }
+  /* Style the topnav .editlinks */
+  .topnav .edita {
+    float: right;
+    margin-right:15px;
+    display: block;
+    color: #171616;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .logo{
+    width: 100px;
+    position: absolute;
+    top: 7%;
+  }
+  /* Change color on hover */
+  .topnav .edita:hover {
+    background-color:rgb(89, 124, 214)!important;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Style the content */
+  .content {
+    background-color: rgb(222, 217, 237);
+    padding: 10px;
+    height: 70px; /* Should be removed. Only for demonstration */
+  }
+  .search{
+    width: 20%;
+  }
+  .nav-link{
+    font-size: 26px;
+  }
+  .exit11{
+    color:rgb(0, 0, 0); 
+    font-size: 20px;border:2px solid rgb(232, 53, 53);
+    background-color: rgb(233, 72, 72);
+    width: 25%;
+    border-radius: 20%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .navbar-toggler{
+    float: right;
+  }
+  
+  

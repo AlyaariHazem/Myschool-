@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <title>مدرستي</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link href="sidebars.css" rel="stylesheet">
+  <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(222, 217, 237);
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      margin-top: 5%;
+      background-color: rgb(89, 124, 214);
+      margin-bottom: 5px;
+    }
+
+    @media (max-width:550px) {
+      .topnav {
+        margin-top: 20%;
+      }
+
+      .topnav a {
+        margin-right: 0 !important;
+      }
+
+    }
+
+    @media (max-width:1200px) {
+      .logo {
+        display: none;
+
+      }
+
+    }
+
+    .nav-link .active {
+      line-height: 3px;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+      float: right;
+      margin-right: 15px;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .logo {
+      width: 100px;
+      position: absolute;
+      top: 2%;
+      left: 50%;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+      color: black;
+    }
+
+    /* Style the content */
+    .content {
+      background-color: rgb(89, 124, 214);
+      padding: 10px;
+      height: 70px;
+      /* Should be removed. Only for demonstration */
+    }
+
+    .search {
+      width: 20%;
+    }
+
+    .nav-link {
+      font-size: 26px;
+    }
+
+    .exit11 {
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      border: 2px solid rgb(211, 210, 217);
+      background-color: rgb(233, 72, 72);
+      width: 25%;
+      border-radius: 20%;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .navbar-toggler {
+      float: right;
+    }
+
+    /* Style the footer */
+    .footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+
+    .navbar-toggler {
+      background-color: rgb(249, 213, 215);
+      color: black;
+    }
+
+    .offcanvas-header {
+      background-color: rgb(216, 215, 222);
+      color: black;
+    }
+
+    .offcanvas-body {
+      background-color: rgb(211, 210, 217);
+    }
+    .navbar-brand:hover{
+      color:red;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navv ">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="../login.php">خروج</a>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> مدير المدرسة</h5>
+          <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#home-collapse">
+                شؤون الطلاب
+              </button>
+              <div class="collapse show" id="home-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../students/students.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">عرض جميع الطلاب</a>
+                  </li>
+                  <li><div>
+                    <a style="margin-bottom: 5px;"  href="../students/profile.php" > <button
+                      onclick="document.getElementById('profile').style.display='block'"
+                      style=" width:auto; border:none; top:8px;"  >معلومات شخصية</button></a>
+                  </div>
+                        </li>
+                  <li><a href="../subjects/students.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded">المواد الدراسية</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                شؤون المدرسن
+              </button>
+              <div class="collapse" id="dashboard-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="../teacher/teacher.php" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> عرض المدرسين</a>
+                  </li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex  text-decoration-none rounded">Monthly</a></li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#students_secssion" aria-expanded="false">
+                قسم الطلاب
+              </button>
+              <div class="collapse" id="students_secssion">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a>
+                  </li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#teacher-secssion" aria-expanded="false">
+                قمسم المعلمين
+              </button>
+              <div class="collapse" id="teacher-secssion">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
+                  </li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#account-secssion" aria-expanded="false">
+                قسم الحسابات
+              </button>
+              <div class="collapse" id="account-secssion">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">الدخل</a></li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">النفقة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#libriry" aria-expanded="false">
+                المكتبة
+              </button>
+              <div class="collapse" id="libriry">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
+                  </li>
+                  <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <img src="../img/logo.jpg" class="logo" alt="">
+</body>
+
+<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=trycss_template4 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Apr 2020 19:35:24 GMT -->
+
+</html>

@@ -1,0 +1,35 @@
+a.btns{
+    position: absolute;
+    left: 9rem;
+    bottom:2rem;
+    width:8rem;
+}
+button.create_submit{
+    position: absolute;
+    right: 3rem !important;
+    bottom:2rem;
+    width:8rem;
+}
+.modal-content {
+    width: 100%;
+    background-color: azure;
+}
+.profile{
+    width: 60%;
+    margin-right: 15%;
+    
+}
+.navbar{
+    position: fixed;
+    z-index: 3;
+    }
+    .navbar-brand{
+        display:none;
+    }
+    .table{
+        margin-top:3rem;
+    }
+    .navhead ul{
+        padding-right: 5rem;
+        padding-top: 1rem;
+    }
