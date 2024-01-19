@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="js/js.js">
+    <meta content="width=device-width,initial=scale=1.0">
+    <link rel="stylesheet" href="../css/tables.css" !important>
+    <title>جدول الحصص </title>
+</head>
+
+<body id="head">
+    <div class="head">
+        <!--star the header-->
+        <header>
+            <div class="headline">
+                <h1>
+                    <p>My school</p>
+                </h1>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="../img/logo.jpg" alt="photo"></a>
+            </div>
+            <!--star the navagition-->
+            <nav class="navHead">
+                <ul>
+                    <li><a href="../index.html">الصفحة الرئيسية </i></a></li>
+                    <li><a href="#head">جدول الحصص</a></li>
+                    <li><a href="#levels">المستوى التعليمي</a></li>
+                    <li><a href="#"> <button class="button1"
+                                onclick="document.getElementById('record').style.display='block'"
+                                style="width:auto;">تسجيل</button></a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn"><a href="#">اتصل بنا</a></button>
+                        <div class="dropdown-contant">
+                            <a href="https://HazemAL-yaari.com" target="_blank"><img src="../img/fb-icon.png"
+                                    alt="photo"></a>
+                            <a href="https://HazemAL-yaari.com" target="_blank"><img src="../img/instagram-icon.png"
+                                    alt="photo"></a>
+                            <a href="https://HazemAL-yaari.com" target="_blank"><img src="../img/twitter-icon.png"
+                                    alt="photo"></a>
+                            <a href="https://HazemAL-yaari.com" target="_parent"><img src="../img/linkedin-icon.png"
+                                    alt="photo"></a>
+                        </div>
+                    </li>
+
+                    <li><button class="btnsearch" type="submit">إرسال</button></li>
+                    <li><input class="btnsearch" type="text" value="..ابحث هنا" style="text-align: right;"
+                            name="search"></li>
+                </ul>
+            </nav>
+        </header>
+
+    </div>
+
+    <!-- logon start         #################################################################################################################################-->
+
+    <div id="record" class="login-you">
+
+        <form class="login-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('record').style.display='none'" class="close"
+                    title="Close losgin">&times;</span>
+                <img src="../img/٢٠٢٢١٠٠٨_٠٩١٨١٧ (2).jpg" alt="photo" class="myphoto">
+            </div>
+
+            <div class="container1">
+                <label for="uname"><b>اسم المستخدم</b></label>
+                <input type="text" text="right" placeholder="اسم المستخدم" name="uname" required>
+
+                <label for="psw"><b>كلمة السر</b></label>
+                <input type="password" placeholder="كلمة السر " name="psw" required>
+
+                <button class="btnLogin" type="submit">تسجيل الدخول</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> ذكرني
+                </label>
+            </div>
+
+            <div class="container1" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('record').style.display='none'"
+                    class="cancelbtn">إلغاء</button>
+                <span class="psw"><a href="#" style="text-decoration: none;">هل نسيت كلمة السر؟</a></span>
+            </div>
+        </form>
+    </div>
+
+    <div class="difine-school">
+        <p class="titl">التعريف بالمدرسة</p>
+        <p id="resulte">بدأ الحفل بالسلام الوطني للمملكة تلاها آيات عطرة من الذكر الحكيم.
+            مسيرة الطلاب والطالبات المتفوقين وتم فيها اهداء وردة شكر وتقدير لأولياء الأمور الكرام الذين كان لهم الدور في
+            الاهتمام ورعاية الابناء حتى وصلوا الى هذه المراكز المتقدمة.
+            كلمة الطلاب والطالبات المتفوقين والتي كانت بمثابة كلمة شكر وعرفان للوالدين ولإدارة المدرسة والمعلمين
+            والمعلمات الأفاضل .
+            فقرة عن أسرار التفوق والنجاح صاحبها عرض فيديو مصور للطلاب والطالبات المتفوقين يقدمون من خلالها نصائح للتفوق
+            وشكر للبيت والمدرسة ودورهم في تحقيق هذا النجاح.
+            كلمة القائد التربوي للمدرسة رحب فيها بضيوف الحفل شاكراً لهم تلبية الدعوة وهنأ أبناءه المتفوقين وبارك لهم
+            نجاحهم وقدم الشكر الجزيل لأولياء الأمور لأهتمامهم ورعايتهم لأبنائهم وكذلك شكره للمعلمين والمعلمات وما بذلوه
+            من الجهد طوال العام الدراسي .
+            تفضل سعادة القائم بالأعمال والملحق الثقافي وقائد المدرسة بتكريم الطلاب المتفوقين وتوزيع الجوائز في جو أسري
+            عمه الفرح والسرور.</p>
+    </div>
+            
+            <script src="../js/main.js"></script>
+</body>
+
+</html>
